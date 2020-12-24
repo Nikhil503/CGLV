@@ -3,8 +3,9 @@
  * @author Nikki Geetu
  *
  */
-public class Board {
-	NextGeneration c=new NextGeneration();
+public class Board
+{
+	Cell c=new Cell();
 	public String printBoard(boolean[][] board)
 	{
 	if(board==null)

@@ -6,7 +6,8 @@ import java.util.Scanner;
  * @author Nikki Geetu
  *
  */
-public class ConwaysGameOfLife {
+public class ConwaysGameOfLife
+{
 	public static void main(String args[])
 	{
 	System.out.println("");

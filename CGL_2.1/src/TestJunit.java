@@ -10,9 +10,11 @@ import org.junit.jupiter.api.Test;
  * @author Nikki Geetu
  *
  */
-class TestJunit {
+class TestJunit
+{
 	@Test
-	 public void testCGLOne() {
+	 public void testCGLOne() 
+	{
 	 Board b = new Board();
 	 System.out.println("======TEST ONE EXECUTED=======");
 	 System.out.println(b.printBoard(null));
@@ -20,18 +22,47 @@ class TestJunit {
 	}
 
 	 @Test
-	 public void testCGLTwo() {
+	 public void testCGLTwo()
+	 {
 	 Board b = new Board();
 	 System.out.println("======TEST TWO EXECUTED=======");
 	     Assertions.assertSame(false,b.createboard(-5,null));
 	 
 	 }
 	@Test
-	 public void testCGLThree() {
+	 public void testCGLThree()
+	{
 	 Board b = new Board();
-
-	     System.out.println("======TEST THREE EXECUTED=======");
-	     Assertions.assertSame(true,b.createboard(5,null));
+	 System.out.println("======TEST THREE EXECUTED=======");
+	 	Assertions.assertSame(true,b.createboard(5,null));
 	 }
+	@Test
+	 public void testCGLFour() {
+	 Board b = new Board();
+	 System.out.println("======TEST FOUR EXECUTED=======");
+	 int [][] l={{1,1},{2,2},{3,3},{4,4}};
+	 Assertions.assertSame(true,b.createboard(5,l));
+	}
+	@Test
+	public void testCGLFive() {
+		Cell c = new Cell();
+		System.out.println("----TEST FIVE EXECUTED----");
+		Assertions.assertSame(null,c.nextgen(null));
+	}
+	@Test
+	public void testCGLSix() {
+		Cell c = new Cell();
+		System.out.println("----TEST SIX EXECUTED----");
+		Assertions.assertSame(0,c.countlivecells(4,4,null));
+	}
+	@Test
+	public void testCGLSeven() {
+		Cell c = new Cell();
+		boolean [][]b={{false,false,false,false,false},{false,true,false,false,false},{false,false,true,false,false},{false,false,false,true,false},{false,false,false,false,true}};
+	    boolean [][]s=c.nextgen(b);
+	    System.out.println("----TEST SEVEN EXECUTED----");
+	    Assertions.assertSame(true,s[2][2]);
+	}
+
 	
 }
