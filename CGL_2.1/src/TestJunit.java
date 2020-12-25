@@ -37,20 +37,23 @@ class TestJunit
 	 	Assertions.assertSame(true,b.createboard(5,null));
 	 }
 	@Test
-	 public void testCGLFour() {
+	 public void testCGLFour() 
+	{
 	 Board b = new Board();
 	 System.out.println("======TEST FOUR EXECUTED=======");
 	 int [][] l={{1,1},{2,2},{3,3},{4,4}};
 	 Assertions.assertSame(true,b.createboard(5,l));
 	}
 	@Test
-	public void testCGLFive() {
+	public void testCGLFive() 
+	{
 		Cell c = new Cell();
 		System.out.println("----TEST FIVE EXECUTED----");
 		Assertions.assertSame(null,c.nextgen(null));
 	}
 	@Test
-	public void testCGLSix() {
+	public void testCGLSix() 
+	{
 		Cell c = new Cell();
 		System.out.println("----TEST SIX EXECUTED----");
 		Assertions.assertSame(0,c.countlivecells(4,4,null));
@@ -63,6 +66,12 @@ class TestJunit
 	    System.out.println("----TEST SEVEN EXECUTED----");
 	    Assertions.assertSame(true,s[2][2]);
 	}
+	@Test
+	 public void testCGLEIGHT() {
+	 System.out.println("======TEST EIGHT EXECUTED=======");
+	 ConwaysGameOfLife c=new ConwaysGameOfLife();
+	 Assertions.assertEquals("Board and next generation is created",c.sample());
+	}  
 
 	
 }
