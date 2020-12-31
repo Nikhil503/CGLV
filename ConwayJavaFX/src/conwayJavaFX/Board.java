@@ -1,7 +1,7 @@
 package conwayJavaFX;
 
 
-//@author sunder
+//@author Nikhil
 public class Board {
 
 public String printBoard(boolean[][] board) // in this method it prints the board if true it print (*), otherwise (.).
