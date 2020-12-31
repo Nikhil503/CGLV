@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 * <p> Copyright: Lynn Robert Carter © 2018-05-06 </p>
 * 
 * @author Lynn Robert Carter
-* 
+* @author sunder
 * @version 2.03	2018-05-07 An implementation baseline for JavaFX graphics
 * 
 */
